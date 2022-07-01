@@ -13,6 +13,10 @@
                 {% else %}
                 <h1>Welcome!</h1>
                 {% endif %}
+
+                {%for i in range(len)%}
+                <div class="tweet">{{tweets[i]}}</div>
+                {%endfor%}
             </main>
         </body>
     </div>

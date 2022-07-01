@@ -8,14 +8,30 @@ html { font-family: sans-serif; background: #eee; padding: 1rem; }
   }
 }
 
-  header {
-    background: #eee;
-    background-size: cover;
-    width: 300px;
-  }
+header {
+  background: #eee;
+  background-size: cover;
+  width: 300px;
+}
 
-  main {
-    background: #eee;
-    background-size: cover;
-    width: calc(100% - 300px);
-  }
+main {
+  background: #eee;
+  background-size: cover;
+  width: calc(100% - 300px);
+}
+
+.tweet {
+  background: #eee;
+  width: 500px;
+  padding: 1rem;
+  border: 0.1px solid;
+  border-color: #dddddd;
+}
+
+header:hover {
+  background: #ddd;
+}
+
+.tweet:hover {
+  background: #ddd;
+}
