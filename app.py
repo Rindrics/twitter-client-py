@@ -4,7 +4,7 @@ from tweet import home_timeline
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/api")
 def home():
     text = home_timeline()
     return f"""
