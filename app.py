@@ -1,16 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template
 from tweet import home_timeline
+import os
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def hoge():
-    return """
-<h1>Welcome</h1>
-
-I'm body
-"""
+    return render_template("index.html", name=os.getenv("NAME"))
 
 
 @app.route("/api")
