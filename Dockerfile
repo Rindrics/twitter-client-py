@@ -3,6 +3,7 @@ FROM python:3.9-buster
 WORKDIR /flask-docker
 
 ENV POETRY_HOME=/opt/poetry
+ENV NAME=Docker
 
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python && \
     cd /usr/local/bin && \
