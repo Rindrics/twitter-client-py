@@ -1,16 +1,19 @@
 <!doctype html>
 <title>Hello from Flask</title>
 <html>
-    <head>
-    </head>
-    <body>
-        <header role="banner">I'm header</header>
-        <main role="main">
-            {% if name %}
-            <h1>Welcome from {{ name }}!</h1>
-            {% else %}
-            <h1>Welcome!</h1>
-            {% endif %}
-        </main>
-    </body>
+    <div class="wrapper">
+        <head>
+            <link rel="stylesheet" href="static/style.css"/>
+        </head>
+        <body>
+            <header role="banner">I'm header</header>
+            <main role="main">
+                {% if name %}
+                <h1>Welcome from {{ name }}!</h1>
+                {% else %}
+                <h1>Welcome!</h1>
+                {% endif %}
+            </main>
+        </body>
+    </div>
 </html>

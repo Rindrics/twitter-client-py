@@ -1,0 +1,21 @@
+html { font-family: sans-serif; background: #eee; padding: 1rem; }
+
+@media all and (min-width: 500px) {
+  .wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  }
+}
+
+  header {
+    background: #eee;
+    background-size: cover;
+    width: 300px;
+  }
+
+  main {
+    background: #eee;
+    background-size: cover;
+    width: calc(100% - 300px);
+  }
