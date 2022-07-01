@@ -13,12 +13,8 @@ def hoge():
 
 @app.route("/api")
 def home():
-    text = home_timeline()
-    return f"""
-<h1>Hello from Flask-Docker!</h1>
-
-{"".join(text)}
-"""
+    tweets = home_timeline()
+    return render_template("index.html", name=os.getenv("NAME"), tweets=tweets, len=len(tweets))
 
 
 if __name__ == "__main__":
