@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hoge():
-    return render_template("index.html", name=os.getenv("NAME"))
+    tweets = home_timeline(use_dummy=True)
+    return render_template("index.html", name=os.getenv("NAME"), tweets=tweets, len=len(tweets))
 
 
 @app.route("/api")
