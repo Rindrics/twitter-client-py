@@ -1,4 +1,4 @@
-text = [
+tweets = {"text": [
     "Hello. This is a sample text.",
     "你好。 这是个样本文本。",
     "Здравейте. Това е примерен текст.",
@@ -7,4 +7,5 @@ text = [
     "Salve. Questo è un testo di esempio.",
     "Olá. Este é um exemplo de texto.",
     "Hola. Este es un texto de muestra.",
-    ]
+    ],
+    "profile_img_url": ""}

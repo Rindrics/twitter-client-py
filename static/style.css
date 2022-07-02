@@ -11,13 +11,24 @@ html { font-family: sans-serif; background: #eee; padding: 1rem; }
 header {
   background: #eee;
   background-size: cover;
-  width: 300px;
+  flex-grow: 1;
+  -webkit-box-flex: 1;
 }
 
 main {
   background: #eee;
   background-size: cover;
-  width: calc(100% - 300px);
+  flex-grow: 2;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+}
+
+.card {
+  display: flex;
+}
+
+.icon {
+  border-radius: 50%;
 }
 
 .tweet {
