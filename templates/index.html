@@ -15,7 +15,12 @@
                 {% endif %}
 
                 {%for i in range(len)%}
-                <div class="tweet">{{tweets[i]}}</div>
+                <div class="card">
+                    <div class="icon">
+                        <img class="icon" src="{{ tweets.profile_img_url[i] }}">
+                    </div>
+                    <div class="tweet">{{tweets.text[i]}}</div>
+                </div>
                 {%endfor%}
             </main>
         </body>
